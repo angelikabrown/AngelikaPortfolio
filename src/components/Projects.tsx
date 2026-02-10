@@ -4,24 +4,24 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "Sales Analytics Dashboard",
+      title: "MuseDash: Listening Analytics",
       description:
         "Built an interactive Tableau dashboard analyzing 2 years of sales data, revealing key trends and actionable insights for business stakeholders.",
-      tags: ["Tableau", "SQL", "Data Analysis"],
+      tags: ["Streamlit", "Python", "Amazon S3", "EDA", "Pyspark", "Pandas"],
       color: "from-primary/20 to-secondary/20",
     },
     {
-      title: "ETL Pipeline for E-commerce",
+      title: "AI-Powered Data Cleaning Tool",
       description:
         "Designed and implemented an automated data pipeline using Python and Airflow to process daily transaction data from multiple sources.",
       tags: ["Python", "Airflow", "PostgreSQL"],
       color: "from-secondary/20 to-primary/20",
     },
     {
-      title: "Customer Segmentation Model",
+      title: "2836 Management Group: Case Study",
       description:
         "Applied clustering algorithms to segment customers based on purchasing behavior, enabling targeted marketing strategies.",
-      tags: ["Python", "Scikit-learn", "Pandas"],
+      tags: ["Excel", "Glide", "Collaboration", "Research"],
       color: "from-primary/20 to-secondary/20",
     },
   ];

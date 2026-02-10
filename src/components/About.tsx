@@ -5,17 +5,17 @@ const About = () => {
     {
       icon: Database,
       title: "Data Engineering",
-      description: "Building efficient ETL pipelines and data warehouses",
+      description: "Maintain current data pipelines and build new ones to ensure data is clean, reliable, and accessible",
     },
     {
       icon: BarChart3,
       title: "Data Analysis",
-      description: "Extracting insights and creating impactful visualizations",
+      description: "Turn your unruly data into actionable insights and compelling visualizations",
     },
     {
       icon: Code2,
-      title: "Problem Solving",
-      description: "Writing clean, efficient code to solve complex problems",
+      title: "Collaboration",
+      description: "Finding solutions unique to your business needs, working closely with stakeholders to ensure data-driven decision making",
     },
   ];
 

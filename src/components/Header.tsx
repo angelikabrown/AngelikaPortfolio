@@ -27,10 +27,10 @@ const Header = () => {
           onClick={() => scrollToSection("hero")}
           className="font-display text-xl font-bold gradient-text"
         >
-          Angelika
+          Angelika Brown
         </button>
         <nav className="hidden md:flex items-center gap-8">
-          {["About", "Skills", "Projects", "Contact"].map((item) => (
+          {["About", "Skills", "Projects", "Contact Me"].map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item.toLowerCase())}

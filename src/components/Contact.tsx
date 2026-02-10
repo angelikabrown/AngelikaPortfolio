@@ -6,20 +6,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "angelika@example.com",
-      href: "mailto:angelika@example.com",
+      value: "angelikpbrown@gmail.com",
+      href: "mailto:angelikpbrown@gmail.com",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       value: "/in/angelika",
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/angelikabrown",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "@angelika",
-      href: "https://github.com",
+      value: "@angelikabrown",
+      href: "https://github.com/angelikabrown",
     },
   ];
 
@@ -28,7 +28,7 @@ const Contact = () => {
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Let's <span className="gradient-text">Connect</span>
+            Let's <span className="gradient-text">Connect</span>!
           </h2>
           <p className="text-muted-foreground mb-12 max-w-xl mx-auto">
             I'm always open to discussing data projects, collaboration opportunities, 
@@ -38,7 +38,7 @@ const Contact = () => {
           <div className="glass-card p-8 rounded-2xl mb-8">
             <div className="flex items-center justify-center gap-2 text-muted-foreground mb-8">
               <MapPin className="w-5 h-5" />
-              <span>Open to remote opportunities worldwide</span>
+              <span>Open to full-time and contract roles on inspiring teams</span>
             </div>
 
             <div className="grid sm:grid-cols-3 gap-6">
@@ -60,7 +60,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <Button 
+          {/* <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground"
             asChild
@@ -69,7 +69,7 @@ const Contact = () => {
               <Mail className="w-5 h-5 mr-2" />
               Send Me a Message
             </a>
-          </Button>
+          </Button>  */}
         </div>
       </div>
     </section>

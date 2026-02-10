@@ -2,19 +2,19 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Languages & Databases",
-      skills: ["Python", "SQL", "R", "PostgreSQL", "MongoDB"],
+      skills: ["Python", "SQL", "Java", "PostgreSQL", "MySQL", "SQL Server", "Azure SQL Database"],
     },
     {
       title: "Data Tools",
-      skills: ["Pandas", "NumPy", "Apache Spark", "Airflow", "dbt"],
+      skills: ["Pandas", "NumPy", "Apache Spark"],
     },
     {
       title: "Visualization",
-      skills: ["Tableau", "Power BI", "Matplotlib", "Plotly", "Seaborn"],
+      skills: ["Power BI", "Matplotlib", "Plotly", "Seaborn", "Streamlit", "Excel"],
     },
     {
-      title: "Cloud & DevOps",
-      skills: ["AWS", "GCP", "Docker", "Git", "Linux"],
+      title: "Collaboration & Version Control",
+      skills: ["Agile", "GitHub"],
     },
   ];
 
