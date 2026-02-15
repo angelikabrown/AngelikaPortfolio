@@ -31,8 +31,7 @@ const Contact = () => {
             Let's <span className="gradient-text">Connect</span>!
           </h2>
           <p className="text-muted-foreground mb-12 max-w-xl mx-auto">
-            I'm always open to discussing data projects, collaboration opportunities, 
-            or just having a chat about the world of data.
+            If you’re working on a data challenge — or thinking through one — I’d be glad to connect.
           </p>
 
           <div className="glass-card p-8 rounded-2xl mb-8">

@@ -1,28 +1,34 @@
-import { ExternalLink, Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projects = [
     {
       title: "MuseDash: Listening Analytics",
       description:
-        "Built an interactive Tableau dashboard analyzing 2 years of sales data, revealing key trends and actionable insights for business stakeholders.",
-      tags: ["Streamlit", "Python", "Amazon S3", "EDA", "Pyspark", "Pandas"],
+        "With a team of three, I built an interactive, AI-infused Streamlit dashboard analyzing a million row listening dataset, revealing key trends and actionable insights for a fictional music streaming company.",
+      tags: ["Streamlit", "Python", "Altair", "Plotly", "Router AI", "Amazon S3", "EDA", "Pyspark", "Pandas"],
       color: "from-primary/20 to-secondary/20",
+      github: "https://github.com/ZCWDataSixZero/MuseDash",
+      details: "/projects/musedash",
     },
     {
-      title: "AI-Powered Data Cleaning Tool",
+      title: "Census Data EDA & Dashboard",
       description:
-        "Designed and implemented an automated data pipeline using Python and Airflow to process daily transaction data from multiple sources.",
-      tags: ["Python", "Airflow", "PostgreSQL"],
+        "Conducted comprehensive exploratory data analysis on census data, creating an interactive dashboard to visualize demographic trends and insights.",
+      tags: ["Python", "Pandas", "Data Cleaning", "EDA", "Tableau", "Visualization"],
       color: "from-secondary/20 to-primary/20",
+      github: "https://github.com/angelikabrown/CensusDataEDA",
+      details: "/projects/census-eda",
     },
     {
       title: "2836 Management Group: Case Study",
       description:
-        "Applied clustering algorithms to segment customers based on purchasing behavior, enabling targeted marketing strategies.",
+        "Worked with a small business preparing to expand into the B2B space by organizing outreach data and building a structured tracking system.",
       tags: ["Excel", "Glide", "Collaboration", "Research"],
       color: "from-primary/20 to-secondary/20",
+      details: "/projects/2836-case-study",
     },
   ];
 
@@ -49,13 +55,16 @@ const Projects = () => {
                   </span>
                 </div>
               </div>
+
               <div className="p-6">
                 <h3 className="font-display font-semibold text-xl mb-3 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
+
                 <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
                   {project.description}
                 </p>
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag) => (
                     <span
@@ -66,16 +75,32 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </Button>
-                  <Button size="sm" className="flex-1 bg-primary hover:bg-primary/90">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
-                  </Button>
+                  {/* View Details (Primary) */}
+                  <Link to={project.details} className="flex-1">
+                    <Button size="sm" className="w-full bg-primary hover:bg-primary/90">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      View Details
+                    </Button>
+                  </Link>
+
+                  {/* Code Button (Only if GitHub exists) */}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button variant="outline" size="sm" className="w-full">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </Button>
+                    </a>
+                  )}
                 </div>
+
               </div>
             </div>
           ))}
@@ -86,3 +111,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
