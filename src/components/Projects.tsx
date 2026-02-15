@@ -4,15 +4,17 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projects = [
+    
+
     {
-      title: "MuseDash: Listening Analytics",
-      description:
-        "With a team of three, I built an interactive, AI-infused Streamlit dashboard analyzing a million row listening dataset, revealing key trends and actionable insights for a fictional music streaming company.",
-      tags: ["Streamlit", "Python", "Altair", "Plotly", "Router AI", "Amazon S3", "EDA", "Pyspark", "Pandas"],
-      color: "from-primary/20 to-secondary/20",
-      github: "https://github.com/ZCWDataSixZero/MuseDash",
-      details: "/projects/musedash",
+        title: "2836 Management Group: Case Study",
+        description:
+          "Worked with a small business preparing to expand into the B2B space by organizing outreach data and building a structured tracking system.",
+        tags: ["Excel", "Glide", "Collaboration", "Research"],
+        color: "from-primary/20 to-secondary/20",
+        details: "/projects/2836-case-study",
     },
+
     {
       title: "Census Data EDA & Dashboard",
       description:
@@ -22,14 +24,18 @@ const Projects = () => {
       github: "https://github.com/angelikabrown/CensusDataEDA",
       details: "/projects/census-eda",
     },
+
     {
-      title: "2836 Management Group: Case Study",
+      title: "MuseDash: Listening Analytics",
       description:
-        "Worked with a small business preparing to expand into the B2B space by organizing outreach data and building a structured tracking system.",
-      tags: ["Excel", "Glide", "Collaboration", "Research"],
+        "With a team of three, I built an interactive, AI-infused Streamlit dashboard analyzing a million row listening dataset, revealing key trends and actionable insights for a fictional music streaming company.",
+      tags: ["Streamlit", "Python", "Altair", "Plotly", "Router AI", "Amazon S3", "EDA", "Pyspark", "Pandas"],
       color: "from-primary/20 to-secondary/20",
-      details: "/projects/2836-case-study",
-    },
+      github: "https://github.com/ZCWDataSixZero/MuseDash",
+      details: "/projects/musedash",
+    }
+
+
   ];
 
   return (
