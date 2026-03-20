@@ -10,7 +10,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import MuseDash from "./pages/MuseDash";
 import CensusEDA from "./pages/CensusEDA";
-import CaseStudy2836 from "./pages/CaseStudy2638";
+import CaseStudy2638 from "./pages/CaseStudy2638";
 import ScrollToTop from "@/components/ScrollToTop";
 
 
@@ -29,7 +29,7 @@ const App = () => (
           {/* Project Detail Pages */}
           <Route path="/projects/musedash" element={<MuseDash />} />
           <Route path="/projects/census-eda" element={<CensusEDA />} />
-          <Route path="/projects/2836-case-study" element={<CaseStudy2836 />} />
+          <Route path="/projects/2638-case-study" element={<CaseStudy2638 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
