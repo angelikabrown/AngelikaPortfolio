@@ -22,12 +22,12 @@ const CaseStudy2638 = () => {
 
           <div>
             <strong>Client</strong><br />
-            Small coaching & wellness business
+            Mid-proffesional coaching & wellness business
           </div>
 
           <div>
             <strong>Goal</strong><br />
-            Expand services to corporate clients
+            Expand services to B2B corporate clients
           </div>
 
           <div>
@@ -59,7 +59,7 @@ const CaseStudy2638 = () => {
         <p className="text-muted-foreground leading-relaxed mt-4">
           Identifying potential corporate contacts and organizing outreach
           efforts required time-intensive research that was difficult to
-          manage alongside daily business operations.
+          manage alongside daily business operations. I came in to help lift this burden by creating structured research and tracking systems to
         </p>
 
       </section>
@@ -84,7 +84,7 @@ const CaseStudy2638 = () => {
           className="rounded-xl border border-border shadow-lg w-full" />
 
         <p className="text-sm text-muted-foreground text-center mt-2 max-w-2xl mx-auto">
-          Structured contact research identifying potential corporate outreach targets.
+          Dummy data. Structured contact research identifying potential corporate outreach targets.
         </p>
 
       </section>
@@ -162,7 +162,7 @@ const CaseStudy2638 = () => {
 
         <p className="text-muted-foreground mb-6">
           Using the business owner's Reiki educational content stored in a
-          spreadsheet, I created a prototype Glide application that allowed
+          spreadsheet, I created a <a href="https://7daychakra.glide.page/dl/96c936">prototype Glide application </a>that allowed
           users to browse content and navigate toward session booking.
         </p>
 
@@ -185,10 +185,14 @@ const CaseStudy2638 = () => {
         <h2 className="text-2xl font-semibold mb-4">Impact</h2>
 
         <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+
+          <li>Freed up the business owner's time to focus on coaching and content creation</li>
           <li>Created structured corporate contact research</li>
-          <li>Improved organization of outreach activity</li>
           <li>Enabled simple tracking of outreach progress</li>
           <li>Provided a lightweight client engagement platform</li>
+          <li>Demonstrated the value of no-code tools for small business solutions</li>
+          <li> Documented app creation so owner can maintain and update content independently</li>
+          
         </ul>
 
       </section>
