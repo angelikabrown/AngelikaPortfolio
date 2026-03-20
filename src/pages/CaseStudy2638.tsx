@@ -2,14 +2,14 @@ import ProjectLayout from "@/components/ProjectLayout";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
-import researchImage from "@/assets/projects/2836/2836-contact-research.png";
-import outreachImage from "@/assets/projects/2836/2836-outreach-dashboard.png";
-import glideImage from "@/assets/projects/2836/2836-glide-app.png";
+import researchImage from "@/assets/projects/2638/2638-contact-research.png";
+import outreachImage from "@/assets/projects/2638/2638-outreach-dashboard.png";
+import glideImage from "@/assets/projects/2638/2638-glide-app.png";
 
 const CaseStudy2836 = () => {
   return (
     <ProjectLayout
-      title="2836 Management Group: Outreach & Client Engagement System"
+      title="2638 Management Group: Outreach & Client Engagement System"
       subtitle="Supporting a small coaching business expanding into corporate partnerships through structured outreach research, tracking systems, and lightweight client engagement tools."
     >
 
