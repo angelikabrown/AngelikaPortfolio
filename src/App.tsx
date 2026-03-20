@@ -10,7 +10,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import MuseDash from "./pages/MuseDash";
 import CensusEDA from "./pages/CensusEDA";
-import CaseStudy2836 from "./pages/CaseStudy2836";
+import CaseStudy2836 from "./pages/CaseStudy2638";
 import ScrollToTop from "@/components/ScrollToTop";
 
 

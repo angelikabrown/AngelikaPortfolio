@@ -1,103 +1,153 @@
 import ProjectLayout from "@/components/ProjectLayout";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+
+import datasetImage from "@/assets/projects/musedash/musedash-dataset.png";
+import architectureImage from "@/assets/projects/musedash/musedash-architecture.png";
+import analysisImage from "@/assets/projects/musedash/musedash-analysis.png";
+import dashboardImage from "@/assets/projects/musedash/musedash-dashboard.png";
 
 const MuseDash = () => {
-    return (
-      <div className="min-h-screen bg-background">
-        <main>
-        <ProjectLayout
-            title="MuseDash: Listening Analytics"
-            subtitle="AI-infused dashboard..."
-            github="https://github.com/ZCWDataSixZero/MuseDash"
-          >     
-          {/* Overview */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-4">Overview</h2>
-            <p className="text-muted-foreground leading-relaxed">
-          MuseDash is an interactive analytics dashboard built with a team of three to
-          analyze a one-million-row music streaming dataset. The goal was to uncover
-          behavioral patterns, listening trends, and potential revenue opportunities
-          for a fictional streaming company.
-            </p>
-          </section>
+  return (
+    <ProjectLayout
+      title="MuseDash: Listening Analytics"
+      subtitle="Exploring one million streaming records to uncover listening trends and user behavior through scalable data processing and interactive visualization."
+      github="https://github.com/ZCWDataSixZero/MuseDash"
+    >
 
-      {/* The Problem */}
+      {/* TECH STACK */}
       <section>
-        <h2 className="text-2xl font-semibold mb-4">The Problem</h2>
+        <div className="flex flex-wrap justify-center gap-2">
+          <span className="px-3 py-1 bg-accent rounded-md text-sm">Python</span>
+          <span className="px-3 py-1 bg-accent rounded-md text-sm">PySpark</span>
+          <span className="px-3 py-1 bg-accent rounded-md text-sm">Pandas</span>
+          <span className="px-3 py-1 bg-accent rounded-md text-sm">Altair</span>
+          <span className="px-3 py-1 bg-accent rounded-md text-sm">Plotly</span>
+          <span className="px-3 py-1 bg-accent rounded-md text-sm">Streamlit</span>
+          <span className="px-3 py-1 bg-accent rounded-md text-sm">AWS S3</span>
+        </div>
+      </section>
+
+      {/* PROBLEM */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Problem</h2>
         <p className="text-muted-foreground leading-relaxed">
-          Large listening datasets often contain valuable insight, but raw records
-          alone do not tell a clear story. The challenge was transforming complex,
-          high-volume data into actionable visual insights that could guide strategic
-          decisions around engagement, segmentation, and user retention.
+          Music streaming platforms generate massive volumes of listening data,
+          but raw records alone do not reveal clear behavioral insights. The
+          challenge was transforming over one million streaming records into
+          meaningful patterns that could help understand listening trends,
+          genre popularity, and user engagement behavior.
         </p>
       </section>
 
-      {/* My Role */}
+      {/* DATASET */}
       <section>
-        <h2 className="text-2xl font-semibold mb-4">My Role</h2>
-        <p className="text-muted-foreground leading-relaxed">
-          I focused on exploratory data analysis, data cleaning, and dashboard
-          implementation. I worked extensively with Pandas and PySpark to process
-          large-scale listening data, structured transformation workflows, and built
-          interactive visualizations using Altair and Plotly within Streamlit.
+        <h2 className="text-2xl font-semibold mb-4">Dataset Overview</h2>
+
+          <p className="text-muted-foreground mb-6 max-w-3xl">
+            The dataset contained over one million listening events capturing
+            user activity, track metadata, and listening duration across multiple
+            genres and artists.
+          </p>
+
+          <img
+            src={datasetImage}
+            alt="MuseDash dataset preview"
+            className="rounded-xl border border-border shadow-lg w-full"
+          />
+          <p className="text-sm text-muted-foreground mt-3 text-center max-w-2xl mx-auto">
+            Sample rows from the raw listening dataset used for analysis.
+          </p>
+        
+      </section>
+
+      {/* ARCHITECTURE */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Architecture</h2>
+
+        <p className="text-muted-foreground mb-6">
+          A scalable processing pipeline was designed to transform raw listening
+          data stored in Amazon S3 into structured datasets suitable for
+          exploratory analysis and visualization.
+        </p>
+
+        <img
+          src={architectureImage}
+          alt="MuseDash data pipeline architecture"
+          className="rounded-xl border border-border shadow-lg w-full"
+        />
+        <p className="text-sm text-muted-foreground mt-3 text-center max-w-2xl mx-auto">
+          Data pipeline architecture.
         </p>
       </section>
 
-      {/* Data & Architecture */}
+      {/* ANALYSIS */}
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Data & Architecture</h2>
-        <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-          <li>One million listening records</li>
-          <li>Data stored and structured in Amazon S3</li>
-          <li>PySpark used for scalable data processing</li>
-          <li>Pandas for transformation and analysis</li>
-          <li>Streamlit frontend for interactive dashboard delivery</li>
-          <li>Altair & Plotly for visual storytelling</li>
-        </ul>
+        <h2 className="text-2xl font-semibold mb-4">Exploratory Analysis</h2>
+
+
+          <p className="text-muted-foreground leading-relaxed">
+            Exploratory analysis focused on identifying patterns in listening
+            behavior, including genre popularity, listening frequency, and
+            time-based engagement trends.
+          </p>
+
+        <img
+          src={analysisImage}
+          alt="MuseDash analysis visualization"
+          className="rounded-xl border border-border shadow-lg"
+        />
+        <p className="text-sm text-muted-foreground mt-3 text-center max-w-2xl mx-auto">
+          KPIs, Listening duration line over time, segmented by user type (free vs. paid).
+        </p>
+
+      
       </section>
 
-      {/* Key Insights */}
+      {/* DASHBOARD */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Interactive Dashboard</h2>
+
+        <p className="text-muted-foreground mb-6">
+          The final deliverable was an interactive Streamlit dashboard that
+          allowed users to explore trends dynamically through filtering,
+          interactive charts, and visual summaries of listening behavior.
+        </p>
+
+        <img
+          src={dashboardImage}
+          alt="MuseDash Streamlit dashboard"
+          className="rounded-xl border border-border shadow-lg w-full"
+        />
+        <p className="text-sm text-muted-foreground mt-3 text-center max-w-2xl mx-auto">
+          Interactive Streamlit dashboard showcasing key insights from the listening data.
+        </p>
+      </section>
+
+      {/* INSIGHTS */}
       <section>
         <h2 className="text-2xl font-semibold mb-4">Key Insights</h2>
+
         <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-          <li>Weekend listening behavior showed a measurable spike in engagement.</li>
-          <li>Genre-based clustering revealed distinct user segmentation patterns.</li>
-          <li>High-retention users correlated strongly with curated playlist usage.</li>
-          <li>Time-of-day listening trends suggested targeted marketing opportunities.</li>
+          <li>
+            Paid listeners exhibited significantly higher engagement levels compared to free users, 
+            with more frequent listening sessions and longer durations.
+          </li>
+          <li>
+            Genre distribution revealed distinct clusters of listener
+            preferences across user segments.
+          </li>
+          <li>
+            Curated playlist listeners demonstrated higher engagement and
+            longer average listening sessions.
+          </li>
+          <li>
+            Time-of-day analysis suggested specific windows of peak listener
+            engagement.
+          </li>
         </ul>
       </section>
 
-      {/* Impact */}
-      <section>
-        <h2 className="text-2xl font-semibold mb-4">Impact</h2>
-        <p className="text-muted-foreground leading-relaxed">
-          The dashboard transformed a dense dataset into a decision-support tool.
-          Instead of reviewing raw tables, stakeholders could explore trends
-          interactively, compare segments, and evaluate behavioral patterns in
-          real time.
-        </p>
-      </section>
+    </ProjectLayout>
+  );
+};
 
-      {/* Lessons Learned */}
-      <section>
-        <h2 className="text-2xl font-semibold mb-4">What I Learned</h2>
-        <p className="text-muted-foreground leading-relaxed">
-          This project reinforced the importance of designing analytics around
-          usability, not just technical accuracy. Clean pipelines and scalable
-          processing matter — but clarity in presentation is what ultimately
-          drives impact. It also strengthened my ability to collaborate across
-          a team while working with large-scale data.
-        </p>
-      </section>
-        </ProjectLayout>
-        <Contact />
-        </main>
-        <Footer />
-      </div>
-    );
-  };
-  
-  export default MuseDash;
-  
-  
+export default MuseDash;

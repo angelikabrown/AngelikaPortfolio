@@ -7,12 +7,12 @@ const Projects = () => {
     
 
     {
-        title: "2836 Management Group: Case Study",
+        title: "2638 Management Group: Case Study",
         description:
           "Worked with a small business preparing to expand into the B2B space by organizing outreach data and building a structured tracking system.",
         tags: ["Excel", "Glide", "Collaboration", "Research"],
         color: "from-primary/20 to-secondary/20",
-        details: "/projects/2836-case-study",
+        details: "/projects/2638-case-study",
     },
 
     {
