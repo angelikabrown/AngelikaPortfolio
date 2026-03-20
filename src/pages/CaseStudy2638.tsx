@@ -6,7 +6,7 @@ import researchImage from "@/assets/projects/2638/2638-contact-research.png";
 import outreachImage from "@/assets/projects/2638/2638-outreach-dashboard.png";
 import glideImage from "@/assets/projects/2638/2638-glide-app.png";
 
-const CaseStudy2836 = () => {
+const CaseStudy2638 = () => {
   return (
     <ProjectLayout
       title="2638 Management Group: Outreach & Client Engagement System"
@@ -216,4 +216,4 @@ maintainable systems that supported the business owner's goals.
   );
 };
 
-export default CaseStudy2836;
+export default CaseStudy2638;
