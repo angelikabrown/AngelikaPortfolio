@@ -162,8 +162,15 @@ const CaseStudy2638 = () => {
 
         <p className="text-muted-foreground mb-6">
           Using the business owner's Reiki educational content stored in a
-          spreadsheet, I created a <a href="https://7daychakra.glide.page/dl/96c936">prototype Glide application </a>that allowed
-          users to browse content and navigate toward session booking.
+          spreadsheet, I created a <a 
+                                      href="https://7daychakra.glide.page/dl/96c936"
+                                      target="_blank"                                      
+                                      rel="noopener noreferrer"
+                                      className="text-primary underline hover:text-primary/80 transition-colors"
+                                      
+                                      >prototype Glide application 
+                                    </a>
+        that allowed users to browse content and navigate toward session booking.
         </p>
 
         <img
@@ -192,7 +199,7 @@ const CaseStudy2638 = () => {
           <li>Provided a lightweight client engagement platform</li>
           <li>Demonstrated the value of no-code tools for small business solutions</li>
           <li> Documented app creation so owner can maintain and update content independently</li>
-          
+
         </ul>
 
       </section>
