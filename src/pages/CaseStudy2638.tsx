@@ -169,8 +169,7 @@ const CaseStudy2638 = () => {
                                       className="text-primary underline hover:text-primary/80 transition-colors"
                                       
                                       >prototype Glide application 
-                                    </a>
-        that allowed users to browse content and navigate toward session booking.
+                                    </a> that allowed users to browse content and navigate toward session booking.
         </p>
 
         <img
